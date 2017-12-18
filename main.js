@@ -17,8 +17,4 @@
     });
   });
 
-  $( "#logo" ).click(function() {
-    $( this ).toggleClass( "logo2" );
-  });
-
 })(jQuery);

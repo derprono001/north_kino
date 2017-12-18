@@ -21,25 +21,10 @@
             $("#panel2").slideToggle("slow");
         });
     });
-    $(".expander").click(function(){
-  var $this = $(this),
-      $content = $this.find(".content");
-  if(!$this.hasClass("closed")){
-    TweenLite.to($content, 0.2, {height:0})
-    $this.addClass("closed")
-  }else{
-    //to open
-    // - temporarilty set height:auto
-    // - tween from height:0
-    TweenLite.set($content, {height:"auto"})
-    TweenLite.from($content, 0.2, {height:0})
-    $this.removeClass("closed");
-  }
-})
 
-    
+
    </script>
-  
+
 </head>
   <body>
 <div class="wrapper">
@@ -49,18 +34,18 @@
             <button class="btn btn-success" type="submit">Search</button>
           </form>
       </nav>
-      
-            
+
+
               <img class="sub-menu-parent" src="img/menu.png" width="100px" height="100px">
-                
+
                 <ul class="sub-menu">
                   <li><a class="sub1" href="booking.html"><img src="img/ticket.png" width="100px" height="100px" alt=""></a></li>
                   <li><a class="sub2" href="schedule.html"><img src="img/schedule.png" width="100px" height="100px" alt=""></a></li>
                 </ul>
               </li>
-              
-           
-          
+
+
+
       <div class="contact_us" id="flip3">
             <div class="always-visible">
                 <img class="expander" src="img/icon.png" alt="" width="130px" height="130px"  >
@@ -76,7 +61,7 @@
                     </div>
                   </div>
                 </a>
-              
+
                 <a href="#" class="social-container facebook">
                   <div class="social-cube">
                     <div class="front">
@@ -87,7 +72,7 @@
                     </div>
                   </div>
                 </a>
-              
+
                 <a href="#" class="social-container youtube">
                   <div class="social-cube">
                     <div class="front">
@@ -98,7 +83,7 @@
                     </div>
                   </div>
                 </a>
-              
+
                 <a href="#" class="social-container github">
                   <div class="social-cube">
                     <div class="front">
@@ -109,7 +94,7 @@
                     </div>
                   </div>
                 </a>
-              
+
                 <a href="#" class="social-container dribbble">
                   <div class="social-cube">
                     <div class="front">
@@ -120,7 +105,7 @@
                     </div>
                   </div>
                 </a>
-              
+
                 <a href="#" class="social-container codepen">
                   <div class="social-cube">
                     <div class="front">
@@ -131,15 +116,15 @@
                     </div>
                   </div>
                 </a>
-                
+
             </div>
         </div>
    <div class="fadein" >
       <img id="f3"  src="https://static0.srcdn.com/wp-content/uploads/2017/03/Justice-League-Movie-Banner.jpg" alt="">
       <img id="f2" src="https://tmc.io/wp-content/uploads/2017/11/Coco-featured.jpeg" alt="">
       <img id="f1" src="https://cdn.movieweb.com/img.news.tops/NEmELGDjB9lVqo_2_b/Thor-Ragnarok-Preview-Behind-Scenes.jpg" alt="">
-   
-   </div>  
+
+   </div>
    <div class="show_post">
        <div class="hot_film" id="flip1" >
            <button class="butt" type="button"><b>HOT FILMS</b></button>
@@ -150,7 +135,7 @@
             <img  src="https://i2.wp.com/teaser-trailer.com/wp-content/uploads/Thor-3-1.jpg?ssl=1" alt="" width="200px" height="250px" ><img class="playbutt" src="img/playbutton.png" width="100px" height="100px">
             <img  src="https://i2.wp.com/teaser-trailer.com/wp-content/uploads/Thor-3-1.jpg?ssl=1" alt="" width="200px" height="250px" ><img class="playbutt" src="img/playbutton.png" width="100px" height="100px">
             <img  src="https://i2.wp.com/teaser-trailer.com/wp-content/uploads/Thor-3-1.jpg?ssl=1" alt="" width="200px" height="250px" ><img class="playbutt" src="img/playbutton.png" width="100px" height="100px">
-           
+
            </div>
        </div>
        <div class="upcoming_film" id="flip2" >
@@ -162,15 +147,15 @@
              <img  src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTkyNDQ1MDc5OV5BMl5BanBnXkFtZTgwOTcyNzI2MzI@._V1_.jpg" alt="" width="200px" height="250px" ><img class="playbutt" src="img/playbutton.png" width="100px" height="100px">
              <img  src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTkyNDQ1MDc5OV5BMl5BanBnXkFtZTgwOTcyNzI2MzI@._V1_.jpg" alt="" width="200px" height="250px" ><img class="playbutt" src="img/playbutton.png" width="100px" height="100px">
              <img  src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTkyNDQ1MDc5OV5BMl5BanBnXkFtZTgwOTcyNzI2MzI@._V1_.jpg" alt="" width="200px" height="250px" ><img class="playbutt" src="img/playbutton.png" width="100px" height="100px">
-            
+
             </div>
         </div>
-       
+
    </div>
    <footer>
       <div class="splitter"></div>
       <ul>
-          
+
               <li>
                   <div class="icon" data-icon="E"></div>
                   <div class="text">
@@ -192,12 +177,12 @@
                       <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium. Nam scelerisque arcu at dui porttitor, non viverra sapien pretium. Nunc nec dignissim nunc. Sed eget est purus. Sed convallis, metus in dictum feugiat, odio orci rhoncus metus. <a href="#">Read more</a></div>
                   </div>
               </li>
-          
+
       </ul>
 
       <div class="bar">
           <div class="bar-wrap">
-              <ul class="links"> 
+              <ul class="links">
                   <li><a href="#">Home</a></li>
                   <li><a href="#">License</a></li>
                   <li><a href="#">Advertise</a></li>
@@ -212,7 +197,7 @@
                           <span class="num">9,999</span>
                       </span>
                   </a>
-       
+
                   <a href="#" class="tw">
                       <span data-icon="T" class="icon"></span>
                       <span class="info">
@@ -220,7 +205,7 @@
                           <span class="num">9,999</span>
                       </span>
                   </a>
-       
+
                   <a href="#" class="rss">
                       <span data-icon="M" class="icon"></span>
                       <span class="info">

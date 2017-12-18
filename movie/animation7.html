@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body
+            {
+                background-color: gray;
+                font-family: Georgia, sans-serif;
+            }
+            .box {
+                background-color: rgb(230, 232, 237);
+                margin-left: auto;
+                margin-right: auto;
+                width: 300px;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 5px 15px 15px rgb(20,20,20);
+            }
+            .rememberbox
+            {
+                margin: 20px;
+                perspective: 600px;
+            }
+            .show
+            {
+                border-bottom: 1px solid rgb(220,220,220);
+                padding: 5px;
+                border: 1px solid rgb(220,220,220);
+            }
+            .hidden{
+                border: 1px solid rgb(220,220,220);
+                border-top: 0px;
+                transition: all 0.35s;
+                transition-timing-function: cubic-bezier(0.730, 0.005, 0.265, 1.550);
+                transform: rotateX(-90deg);
+                transform-style: preserve-3d;
+                transform-origin: 0px 0px;
+                height: 0px;
+                opacity: 0;
+            }
+            .show-hidden
+            {
+                transform: rotateX(0deg);
+                opacity: 1;
+                height: 95px;
+            }
+            .button
+            {
+                background-color: blue;
+                background: linear-gradient(to bottom, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%);;
+                color: white;
+                margin: 30px;
+                padding: 10px;
+                border-radius: 5px;
+                text-align: center;
+                box-shadow: 1px 1px 2px rgb(6, 61, 119);
+            }
+            .phonebox
+            {
+                width: 238px;
+                padding: 10px;
+                border: 0px;
+                border-top: 1px solid rgb(220,220,220);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="rememberbox">
+                <div class="show">
+                    <input type="checkbox" onchange="appear()"> <b>Remember me</b>
+                </div>
+                <div class="hidden" id="checked">
+                    <div>
+                        <div style="padding: 10px;">
+                            For security, please enter your mobile phone number
+                        </div>
+
+                        <input class="phonebox" type="text" placeholder="(555) 1234-789">
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                Pay $25.00
+            </div>
+        </div>
+        <script>
+            function appear()
+            {
+                document.getElementById("checked").classList.toggle("show-hidden");
+            }
+        </script>
+    </body>
+</html>
