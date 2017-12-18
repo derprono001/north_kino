@@ -10,6 +10,7 @@
 
 #logo:hover{
   background-image: url('logo2.png');
+  background-color: red;
 }
 
 #nav{

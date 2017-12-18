@@ -1,4 +1,5 @@
 (function($) {
+
   var logo = $('#logo');
   var nav = $('#nav');
   $(document).ready(function(){
@@ -15,4 +16,9 @@
       }
     });
   });
+
+  $( "#logo" ).click(function() {
+    $( this ).toggleClass( "logo2" );
+  });
+
 })(jQuery);
