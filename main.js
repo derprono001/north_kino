@@ -1,4 +1,8 @@
 (function($) {
   var logo = $('#logo');
-  TweenLite.to(logo, 1, {opacity:0, y50});
+  $(document).ready(function(){
+    $('#logo').click(function(){
+        TweenLite.to(logo, 0, {y: 50});
+    });
+});
 })(jQuery);
