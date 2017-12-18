@@ -9,8 +9,6 @@
 
   <body>
 
-
-
   <div id="wrap">
   <form action="" autocomplete="on">
   <input id="search" name="search" type="text" placeholder="Movie, Actor, Director...?"><input id="search_submit" value="Rechercher" type="submit">
@@ -19,18 +17,41 @@
 
     <div id="logo"></div>
     <div id="nav">
-      <button class="myButton but1" onclick="">Movies</button>
-      <button class="myButton but2">Location</button>
-      <button class="myButton but3">Food</button>
-      <button class="myButton but4">Extra</button>
-      <button class="myButton but5">Gift</button>
+      <button class="myButton but1">Movies</button>
+      <button class="myButton but1">Location</button>
+      <button class="myButton but1">Food</button>
+      <button class="myButton but1">Extra</button>
+      <button class="myButton but1">Gift</button>
     </div>
-    <div class="fadein" >
-       <img id="f3" src="pic/1.jpg" alt="">
-       <img id="f2" src="pic/2.jpg" alt="">
-       <img id="f1" src="pic/3.jpg" alt="">
+    <div class="fadein">
+       <img class="f3" src="pic/1.jpg" alt="">
+       <img class="f2" src="pic/2.jpg" alt="">
+       <img class="f1" src="pic/3.jpg" alt="">
+    </div>
+    <div class="banner1">
+      <div class="bannertext">
+        <p>This is for Movies Location Food Gift and Extra</p>
+      </div>
+    </div>
 
+    <div class="upcoming">
+      <p>upcoming</p>
     </div>
+
+    <div class="image-slide">
+
+      <div class="image-content">
+        <img  class="image" src="pic/1.jpg" alt="">
+        <img  class="image" src="pic/2.jpg" alt="">
+        <img  class="image" src="pic/3.jpg" alt="">
+        <img  class="image" src="pic/4.jpg" alt="">
+      </div>
+      <div class="btn">
+        <button type="button" name="button left" onclick="left()">Left</button>
+        <button type="button" name="button right" onclick="right()">Right</button>
+      </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/CSSPlugin.min.js"></script>

@@ -3,7 +3,7 @@
   left: 20%;
   width: 224px;
   height: 62px;
-  position: fixed;
+  position: absolute;
   background-image: url('logo.png');
   transition: all 500ms cubic-bezier(0.010, 1.365, 0.620, 1.570);
 }
@@ -19,7 +19,7 @@
   width: 800px;
   height: 62px;
   left: 33%;
-  position: fixed;
+  position: absolute;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
@@ -29,7 +29,6 @@
 #wrap {
   margin: 0px 20%;
   display: inline-block;
-  position: relative;
   height: 40px;
   float: right;
   padding: 0;
@@ -119,15 +118,17 @@ input[type="submit"]:hover {
     53% {opacity: 0;}
     100% {opacity: 0;}
 }
-#f2 {
+.f2 {
     -webkit-animation-delay: 2s;
 }
-#f3 {
+.f3 {
     -webkit-animation-delay: 4s;
 }
-.myButton {
+.but1{
   width: 154px;
   margin-top: 5px;
+}
+.myButton {
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -168,4 +169,70 @@ input[type="submit"]:hover {
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+.banner1{
+  width: 100%;
+  height: 540px;
+  padding-left: 0px;
+  left: 0px;
+  margin-top: 55px;
+  text-align: center;
+  position: absolute;
+  opacity: 0;
+  z-index: 1000;
+  background-color: black;
+}
+.bannertext{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  z-index: 10000;
+}
+.bannertext p {
+  font-size: 50px;
+  color: white;
+  opacity: 1;
+}
+.upcoming{
+  margin-top: 650px;
+  margin-left: 20%;
+  background-color: red;
+  position: absolute;
+}
+
+.image-slide {
+  width: 1920px;
+  position: absolute;
+  margin-top: 750px;
+}
+.image-content {
+  position: relative;
+  width: 960px;
+  height: 540px;
+  margin:auto;
+  overflow: hidden;
+}
+img {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  transition: all 500ms cubic-bezier(0.790, 0.010, 0.270, 0.995);
+}
+.btn {
+  margin-top: 20px;
+  text-align: center;
+}
+.btn button {
+  padding: 5px;
+  width: 100px;
+  border: none;
+  font-family: "LG Smart Light",Tahoma,Arial,sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #D4D4D4;
+  color: #333;
+}
+.btn button:hover {
+  color: #fff;
+  background-color: #333;
 }
