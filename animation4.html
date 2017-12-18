@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <style>
+    div:hover{
+      background-color: pink;
+    }
+    body{
+      perspective: 800px;
+    }
+      #example1{
+
+        height:200px;
+        background-color: green;
+        /*transform: translate(30px, 30px);*/
+        /*transform:rotatex(45deg) rotatey(10deg) rotateZ(10deg);*/
+        /*transform: scale(1.2, 1);*/
+        /*transform: skew(20deg, 40deg);*/
+        /*transform: matrix();*/
+        transition: all 500ms cubic-bezier(0.010, 1.365, 0.620, 1.570);
+      }
+      .foo:hover{
+        height:200px;
+        transform: rotate(15deg);
+      }
+      .bar{
+        width:200px;
+      }
+    </style>
+ </head>
+
+ <body>
+   <button id="test" onclick="activate()">Activate</button>
+   <div id = "example1" class="foo">
+
+   </div>
+   <script>
+    function activate()
+    {
+      //console.log("Hello");
+      document.getElementById("example1").classList.toggle("bar");
+    }
+
+   </script>
+
+ </body>
+</html>
