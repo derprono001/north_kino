@@ -16,37 +16,43 @@
             $("#panel1").slideToggle("slow");
         });
     });
-    $(document).ready(function(){
-        $("#flip2").click(function(){
-            $("#panel2").slideToggle("slow");
-        });
-    });
+    
 
 
    </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/CSSPlugin.min.js"></script>
+   <script src="main.js"></script>
 
 </head>
   <body>
 <div class="wrapper">
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-          <form class="form-inline" action="/action_page.php">
-            <input class="form-control" type="text" placeholder="Search">
-            <button class="btn btn-success" type="submit">Search</button>
-          </form>
-      </nav>
+  <div id="wrap">
+    <form action="" autocomplete="on">
+    <input id="search" name="search" type="text" placeholder="Movie, Actor, Director...?"><input id="search_submit" value="Rechercher" type="submit">
+    </form>
+    </div>
+  
+      <div id="logo"></div>
+      <div id="nav">
+        <button class="myButton but1">Movies</button>
+        <button class="myButton but1">Location</button>
+        <button class="myButton but1">Food</button>
+        <button class="myButton but1">Extra</button>
+        <button class="myButton but1">Gift</button>
+      </div>
+    
 
-
-              <img class="sub-menu-parent" src="img/menu.png" width="100px" height="100px">
+             
 
                 <ul class="sub-menu">
                   <li><a class="sub1" href="booking.html"><img src="img/ticket.png" width="100px" height="100px" alt=""></a></li>
                   <li><a class="sub2" href="schedule.html"><img src="img/schedule.png" width="100px" height="100px" alt=""></a></li>
                 </ul>
-              </li>
+             
 
 
 
-      <div class="contact_us" id="flip3">
+      <div class="contact_us" id="flip2">
             <div class="always-visible">
                 <img class="expander" src="img/icon.png" alt="" width="130px" height="130px"  >
             </div>
@@ -125,6 +131,16 @@
       <img id="f1" src="https://cdn.movieweb.com/img.news.tops/NEmELGDjB9lVqo_2_b/Thor-Ragnarok-Preview-Behind-Scenes.jpg" alt="">
 
    </div>
+   <div class="image-slide">
+    <div class="leftbtn" onclick="left()"><img src="pic/left.png" alt=""></div>
+    <div class="rightbtn" onclick="right()"><img src="pic/right.png"></div>
+    <div class="image-content">
+      <img  class="image" src="pic/1.jpg" alt="">
+      <img  class="image" src="pic/2.jpg" alt="">
+      <img  class="image" src="pic/3.jpg" alt="">
+      <img  class="image" src="pic/4.jpg" alt="">
+    </div>
+  </div>
    <div class="show_post">
        <div class="hot_film" id="flip1" >
            <button class="butt" type="button"><b>HOT FILMS</b></button>
@@ -138,18 +154,7 @@
 
            </div>
        </div>
-       <div class="upcoming_film" id="flip2" >
-            <button class="butt" type="button"><b>UPCOMING MOVIES</b></button>
-            <br></br>
-            <div id="panel2" class="pics" >
-             <img  src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTkyNDQ1MDc5OV5BMl5BanBnXkFtZTgwOTcyNzI2MzI@._V1_.jpg" alt="" width="200px" height="250px" ><img class="playbutt" src="img/playbutton.png" width="100px" height="100px">
-             <img  src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTkyNDQ1MDc5OV5BMl5BanBnXkFtZTgwOTcyNzI2MzI@._V1_.jpg" alt="" width="200px" height="250px" ><img class="playbutt" src="img/playbutton.png" width="100px" height="100px">
-             <img  src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTkyNDQ1MDc5OV5BMl5BanBnXkFtZTgwOTcyNzI2MzI@._V1_.jpg" alt="" width="200px" height="250px" ><img class="playbutt" src="img/playbutton.png" width="100px" height="100px">
-             <img  src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTkyNDQ1MDc5OV5BMl5BanBnXkFtZTgwOTcyNzI2MzI@._V1_.jpg" alt="" width="200px" height="250px" ><img class="playbutt" src="img/playbutton.png" width="100px" height="100px">
-             <img  src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTkyNDQ1MDc5OV5BMl5BanBnXkFtZTgwOTcyNzI2MzI@._V1_.jpg" alt="" width="200px" height="250px" ><img class="playbutt" src="img/playbutton.png" width="100px" height="100px">
-
-            </div>
-        </div>
+      
 
    </div>
    <footer>
@@ -219,6 +224,7 @@
           </div>
       </div>
   </footer>
+  
 </div>
   </body>
 </html>
