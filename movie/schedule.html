@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/schedule.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script>
+        $(document).ready(function() {                
+            var t = TweenLite.to($("ul.menu"), 0.25, {opacity: 1, top: "0px", "z-index": 1});
+            t.reversed(true);
+
+            $("button#menu").click(function() {
+                if(t.reversed())
+                {
+                    t.play();
+                }
+                else
+                {
+                    t.reverse();
+                }
+                
+            });
+        });
+    </script>
+
+</head>
+<body>
+<div class="wrapper">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <form class="form-inline" action="/action_page.php">
+          <input class="form-control" type="text" placeholder="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+    </nav>
+    <div class="menuSystem">
+        <button id="menu">Choose Theater</button>
+        <div class="menuContent">    
+            <ul class="menu">
+                <li><a href="demo2.html">Helsinki</a></li>
+                <li><a href="demo2.html">Turku</a></li>
+                <li><a href="demo2.html">Tampere</a></li>
+                <li><a href="demo2.html">Oulu</a></li>
+            </ul>
+        </div>
+    </div>
+
+    
+    
+    <div class="slide" id="schedule">
+            <img class="symbol" src="img/schedule.png" alt="" >
+        <ul>
+          
+          <li>
+            <img src="img/mon.png" alt="" width="72px" height="177px">
+            <div class="title">
+                    <a href="demo1.html">CoCo</a><br>
+                    <a href="demo1.html">Thor 3: Ragnarok</a><br>
+                    <a href="demo1.html">Murder on the oriented Express</a><br>
+                    <a href="demo1.html">Justice League</a><br>
+                    <a href="demo1.html">Star Wars: The Last Jedi</a>
+            </div>
+            
+            
+          </li>
+          
+           <li>
+            <img src="img/tue.png" alt="" width="72px" height="177px">
+            <div class="title">
+                    <a href="demo1.html">CoCo</a><br>
+                    <a href="demo1.html">Thor 3: Ragnarok</a><br>
+                    <a href="demo1.html">Murder on the oriented Express</a><br>
+                    <a href="demo1.html">Justice League</a><br>
+                    <a href="demo1.html">Star Wars: The Last Jedi</a>
+            </div>
+            
+          </li>
+          
+           <li>
+            <img src="img/wed.png" alt="" width="72px" height="177px">
+            <div class="title">
+                    <a href="demo1.html">CoCo</a><br>
+                    <a href="demo1.html">Thor 3: Ragnarok</a><br>
+                    <a href="demo1.html">Murder on the oriented Express</a><br>
+                    <a href="demo1.html">Justice League</a><br>
+                    <a href="demo1.html">Star Wars: The Last Jedi</a>
+            </div>
+          </li>
+          
+          <li>
+            <img src="img/thurs.png" alt="" width="72px" height="177px">  
+            <div class="title">
+                    <a href="demo1.html">CoCo</a><br>
+                    <a href="demo1.html">Thor 3: Ragnarok</a><br>
+                    <a href="demo1.html">Murder on the oriented Express</a><br>
+                    <a href="demo1.html">Justice League</a><br>
+                    <a href="demo1.html">Star Wars: The Last Jedi</a>
+            </div>
+          </li>
+          
+          <li>
+                <img src="img/fri.png" alt="" width="72px" height="177px">  
+             <div class="title">
+                    <a href="demo1.html">CoCo</a><br>
+                    <a href="demo1.html">Thor 3: Ragnarok</a><br>
+                    <a href="demo1.html">Murder on the oriented Express</a><br>
+                    <a href="demo1.html">Justice League</a><br>
+                    <a href="demo1.html">Star Wars: The Last Jedi</a>
+            </div>
+            
+          </li>
+          <li>
+                <img src="img/sat.png" alt="" width="72px" height="177px">
+                <div class="title">
+                        <a href="demo1.html">CoCo</a><br>
+                        <a href="demo1.html">Thor 3: Ragnarok</a><br>
+                        <a href="demo1.html">Murder on the oriented Express</a><br>
+                        <a href="demo1.html">Justice League</a><br>
+                        <a href="demo1.html">Star Wars: The Last Jedi</a>
+                </div>
+          </li>
+          <li>
+                <img src="img/sun.png" alt="" width="72px" height="177px">
+             <div class="title">
+                    <a href="demo1.html">CoCo</a><br>
+                    <a href="demo1.html">Thor 3: Ragnarok</a><br>
+                    <a href="demo1.html">Murder on the oriented Express</a><br>
+                    <a href="demo1.html">Justice League</a><br>
+                    <a href="demo1.html">Star Wars: The Last Jedi</a>
+            </div>
+            
+          </li>
+          
+       </ul>
+     </div>
+     
+    <footer>
+        <div class="splitter"></div>
+        <ul>
+            
+                <li>
+                    <div class="icon" data-icon="E"></div>
+                    <div class="text">
+                        <h4>About</h4>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium. Nam scelerisque arcu at dui porttitor, non viverra sapien pretium. Nunc nec dignissim nunc. Sed eget est purus. Sed convallis, metus in dictum feugiat, odio orci rhoncus metus. <a href="#">Read more</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon" data-icon="A"></div>
+                    <div class="text">
+                        <h4>Archive</h4>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium. Nam scelerisque arcu at dui porttitor, non viverra sapien pretium. Nunc nec dignissim nunc. Sed eget est purus. Sed convallis, metus in dictum feugiat, odio orci rhoncus metus. <a href="#">Read more</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon" data-icon="S"></div>
+                    <div class="text">
+                        <h4>Cloud</h4>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium. Nam scelerisque arcu at dui porttitor, non viverra sapien pretium. Nunc nec dignissim nunc. Sed eget est purus. Sed convallis, metus in dictum feugiat, odio orci rhoncus metus. <a href="#">Read more</a></div>
+                    </div>
+                </li>
+            
+        </ul>
+  
+        <div class="bar">
+            <div class="bar-wrap">
+                <ul class="links"> 
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">License</a></li>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+  
+                <div class="social">
+                    <a href="#" class="fb">
+                        <span data-icon="f" class="icon"></span>
+                        <span class="info">
+                            <span class="follow">Become a fan Facebook</span>
+                            <span class="num">9,999</span>
+                        </span>
+                    </a>
+         
+                    <a href="#" class="tw">
+                        <span data-icon="T" class="icon"></span>
+                        <span class="info">
+                            <span class="follow">Follow us Twitter</span>
+                            <span class="num">9,999</span>
+                        </span>
+                    </a>
+         
+                    <a href="#" class="rss">
+                        <span data-icon="M" class="icon"></span>
+                        <span class="info">
+                            <span class="follow">Subscribe </span>
+                            <span class="num">9,999</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="clear"></div>
+                <div class="copyright">&copy;  2017 All Rights Reserved</div>
+            </div>
+        </div>
+    </footer>
+  </div>
+    </body>
+  </html>
+  
