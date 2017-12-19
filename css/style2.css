@@ -11,6 +11,7 @@ html {
   position: absolute;
   left: 40%;
   max-width: 500px;
+  margin-top: 15em;
 }
 
 ol {
@@ -156,4 +157,43 @@ ol {
 .rubberBand {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
+}
+.banner2{
+  width: auto;
+  margin-top: 3em;
+  margin-left: -1em;
+}
+.film_seat{
+  margin-top: 2em;
+}
+.check_out{
+  margin-left: 45em;
+  margin-top: -5em;
+  border: 1px solid black;
+  border-radius: 25px;
+  background: #5C6AFF;
+  color: black;
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.check_out:hover{
+  cursor: pointer;
+  color: #dddddd;
+  background-color: black;
+}
+.film_name{
+  position: absolute;
+  margin-left: 24em;
+  margin-top: -28em;
+}
+.film-name p{
+  font-size: 20px;
+  font-weight: 500;
+}
+.film_detail p {
+  font-size: 15px;
+  font-weight: 500;
 }
